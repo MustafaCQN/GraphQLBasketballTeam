@@ -1,0 +1,26 @@
+
+# Creation Mutation
+mutation {
+  createPlayer(player: {name:"Eren", surname:"Eminoğlu", position:"Shooting_guard_SG"}){
+    id
+    name
+    surname
+    position
+  }
+}
+
+# Fetching all Players Query
+query{
+  getAllPlayers{
+    id
+    name
+    surname
+    position
+  }
+}
+
+
+# Deletion Mutation
+mutation {
+  deletePlayerById(id: 1)
+}
